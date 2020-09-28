@@ -1,0 +1,43 @@
+.CoverContainer{
+    display: flex;
+    background-color: rgb(148, 148, 148);
+    padding: 2em;
+    height: 500px;
+}
+
+.CoverText{
+    width: 50%;
+    height: sizeLarge;
+    background-color: rgb(211, 211, 211);
+    color: brandHeader;
+    padding: 3em;
+    padding-top: 7em;
+}
+
+.CoverText h1{
+    font-size: 70px;
+    margin: 0;
+}
+
+.CoverText h2{
+    margin: 0, .1rem, 0;
+    font-size: 50px;
+}
+
+.CoverText p{
+    font-size: fontSize7;
+    margin: 0.25em;
+}
+
+.CoverImage{
+    width: 50%;
+    height: sizeLarge;
+    background-color: rgb(199, 199, 199);
+    padding: 4em;
+
+}
+
+.CoverImage .SVGPhoto{
+    width: 100%;
+    height: 100%    
+}

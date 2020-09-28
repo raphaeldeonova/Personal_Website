@@ -5,7 +5,7 @@ function NavBar() {
         <div>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <span class="navbar-brand mb-0 h1">Raphael Deonova</span>
+                    <span class="navbar-brand mb-0 h1">RD</span>
                 </div>
                 <div class="mx-auto order-0">
                     <a class="navbar-brand mx-auto" href="#">Logo</a>
