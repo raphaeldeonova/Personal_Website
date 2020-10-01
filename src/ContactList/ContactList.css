@@ -1,14 +1,27 @@
 .container{
     padding: 2em;
-    
+    text-align: center;
 }
 
 .contactContainer{
     display: flex;
     padding: 2em;
+    justify-content: center
 }
 
 .contactCard{
+    margin: 10px;
     padding: 5px;
-    width:25%
+    width:10em;
+
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: white;
+
+    transition: 0.3s ease
+    
+}
+
+.contactCard:hover{
+    transform: scale(1.3)
 }

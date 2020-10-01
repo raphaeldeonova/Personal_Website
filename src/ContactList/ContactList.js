@@ -14,7 +14,7 @@ class ContactList extends React.Component {
             list.push(
                 <div className="contactCard">
                     <h2 className="socialMedia">{element.media}</h2>
-                    <p className="username">{element.username}</p>
+                    <p className="username"><i>{element.username}</i></p>
                     <a className="socialLink" href={element.link}>Get to know me!</a>
                 </div>
             )
