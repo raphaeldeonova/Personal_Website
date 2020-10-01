@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar.js'
 import Cover from '../Cover/Cover.js'
+import ContactList from '../ContactList/ContactList.js'
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Cover />
+      <ContactList />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.container{
+    padding: 2em;
+    
+}
+
+.contactContainer{
+    display: flex;
+    padding: 2em;
+}
+
+.contactCard{
+    padding: 5px;
+    width:25%
+}
