@@ -1,9 +1,10 @@
 import React from 'react'
+import Schools from './Schools/Schools.js'
 
 function AcademicPage(){
     return(
         <div>
-            <h1>This is the Academic Page</h1>
+            <Schools />
         </div>
     )
 }
