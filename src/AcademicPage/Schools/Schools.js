@@ -2,18 +2,21 @@ import React from 'react'
 import './Schools.css'
 import ubclogo from './graphics/ubc.png'
 import kanisiuslogo from './graphics/kanisius.png'
+import ubcBackground from './graphics/ubcbackgroundedited.jpg'
+import kanisiusbackground from './graphics/kanisiusbackgroundedited.jpg'
 
 const School = (props) => {
-    console.log(props.schoolImage)
+    const {schoolLogo, schoolName, schoolDescription, schoolBackground} = props;
 
     return (
-        <div className="schoolContainer">
+        <div className="schoolContainer" 
+            style={{backgroundImage: `url(${schoolBackground})`}}>
             <div className='schoolImage'>
-                <img src={props.schoolImage} alt="" />
+                <img src={schoolLogo} alt="" />
             </div>
             <div className='schoolText'>
-                <h3>{props.schoolname}</h3>
-                <p>{props.schooldescription}</p>
+                <h3>{schoolName}</h3>
+                <p>{schoolDescription}</p>
             </div>
         </div>
     )
@@ -33,12 +36,14 @@ class Schools extends React.Component {
             <div className="schoolsMainContainer">
                 <h1>Schools</h1>
                 <div className="topbreaker"></div>
-                <School schoolname="University of British Columbia"
-                    schooldescription={this.state.ubctext}
-                    schoolImage={ubclogo} />
-                <School schoolname="Kolese Kanisius" 
-                    schooldescription= {this.state.kanisiustext}
-                    schoolImage = {kanisiuslogo} />
+                <School schoolName="University of British Columbia"
+                    schoolDescription={this.state.ubctext}
+                    schoolLogo={ubclogo}
+                    schoolBackground={ubcBackground} />
+                <School schoolName="Kolese Kanisius" 
+                    schoolDescription= {this.state.kanisiustext}
+                    schoolLogo = {kanisiuslogo}
+                    schoolBackground={kanisiusbackground} />
             </div>
 
         )
